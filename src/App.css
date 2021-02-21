@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.outdiv {
+  width: 700px;
+  height: 700px;
+}
+
+/* td {
+  border: solid green 2px;
+  width: 100px;
+} */
+
+.weekDay {
+  background-color: #dddddd;
+  z-index: 100;
+  cursor: pointer;
+}
+.tdCell {
+  width: 100px;
+  height: 100px;
+}
+
+.blankCell {
+  border: none;
+}
+
+.selectedCell {
+  border: red solid 1px;
+  background: salmon;
+}
+
+.standardCell {
+  border: lightgray solid 1px;
+  background: white;
+}
+
+.cellWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.cellTitle {
+  background: lightblue;
+  height: 20px;
+  cursor: pointer;
+}
+
+.cellNote {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
